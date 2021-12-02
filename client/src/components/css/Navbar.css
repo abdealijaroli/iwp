@@ -1,0 +1,79 @@
+.sidehoverbar a.active{
+    opacity: 1; 
+    background-color: #41331C;
+    color: #9AA0A6;
+}
+.sidehoverbar a { 
+    margin-left: 0px;
+    background-color: #202124; 
+    position: absolute; 
+    font-size: 22px; 
+    text-decoration: none; 
+    color: #9AA0A6; 
+    padding: 10px; 
+    border-radius: 0px 25px 25px 0px; 
+    left: -175px; 
+    transition: 0.5s; 
+    opacity: 0.5; 
+    font-family: 'Work Sans', sans-serif;
+}
+.sidehoverbar a:hover { 
+    left: 0px; 
+    opacity: 1; 
+    background-color: #41331C;
+    color: #E8EAED;
+}
+.sidehoverbar i { 
+    float: right; 
+}
+.home { 
+    top: 50px; 
+    width: 210px; 
+    height: 30px; 
+}
+.list { 
+    top: 110px; 
+    width: 210px; 
+    height: 30px; 
+}
+.note { 
+    top: 170px; 
+    width: 210px; 
+    height: 30px; 
+}
+.archive { 
+    top: 230px; 
+    width: 210px; 
+    height: 30px; 
+}
+.trash { 
+    top: 290px; 
+    width: 210px; 
+    height: 30px; 
+}
+.material-icons-outlined.md-42 {
+    font-size: 38px; 
+}
+.material-icons-outlined,
+.material-icons.material-icons--outlined {
+  font-family: 'Material Icons Outlined';
+}
+
+.topnavbar{
+    overflow:hidden;
+    border-bottom: solid #525355;
+}
+
+.topnavbar a{
+    float: right;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    margin:10px;
+    display: block;
+    background-color: #F4B606;
+    color:black;
+    border-radius: 20px;
+    padding: 5px;
+}

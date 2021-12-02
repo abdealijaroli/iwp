@@ -1,0 +1,84 @@
+.noteDetailContainer{
+    margin-left:150px;
+    margin-top:40px;
+}
+
+.noteDetailForm{
+    width: 400px;
+    margin: 0 auto;
+}
+
+.noteDetailTitle{
+    width: 100%;
+    height: 50px;
+    min-width: 50%;
+    padding: 0;
+    border-radius: 0;
+    line-height: 15px;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #333333;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: lighter;
+}
+
+.noteDetailBody{
+    width: 100%;
+    padding: 3px;
+    border-radius: 0;
+    line-height: 15px;
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #333333;
+    border-radius: 15px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: lighter;
+    line-height: 125%;
+}
+
+.buttonArchive,
+.buttonDelete,
+.buttonUpdate{
+    padding: 6px 8px;
+    color: white;
+    position: relative;
+    display:inline-block;
+    background-color: transparent;
+    border: transparent;
+    float:right;
+  }
+
+  .buttonArchive::before,
+  .buttonDelete::before,
+  .buttonUpdate::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #000;
+    -webkit-transform: scaleX(.3);
+    transform: scaleX(.3);
+    opacity: 0;
+    transition: all .3s
+  }
+  .buttonArchive:hover::before,
+  .buttonDelete:hover::before,
+  .buttonUpdate:hover::before{
+    opacity: 1;
+    background-color: rgb(48,50,54);
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    transition: -webkit-transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity .4s;
+    transition: transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity
+  }
+  

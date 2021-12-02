@@ -1,0 +1,47 @@
+.register-input-wrapper {
+    width: 400px;
+    margin: 50px auto;
+    font-family: 'Work Sans', sans-serif;
+  }
+  
+.inputRegister {
+    height: 30px;
+    width: 50%;
+    min-width: 50%;
+    padding: 0;
+    border-radius: 0;
+    line-height: 15px;
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #333333;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: lighter;
+  }
+  
+  button.register{
+      align-self: center;
+      margin-left: 150px;
+      font-family: 'Work Sans', sans-serif;
+      background-color: #F4B606;
+      border-radius: 15px;
+      border-style: none;
+      font-size: large;
+  }
+  
+  .register-alert {
+      padding: 5px;
+      margin:10px;
+      background-color: #F4B606;
+      font-family: 'Work Sans', sans-serif;
+      color: black;
+      border-radius: 15px;
+      align-self: center;
+      text-align: center;
+  }
+
+  .loginRedirect{
+    color: #F4B606;
+  }

@@ -1,0 +1,118 @@
+.masonry-home{
+    margin-left:150px;
+    margin-right: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+
+.masonry-note.box {
+    margin:10px 10px 10px 10px;
+    padding:5px;
+    border-radius: 5px;
+    border-color: #525355;
+    border-style: solid;
+    min-width: 240px;
+    max-width: 240px;
+    overflow-wrap: anywhere;
+    min-height: 120px;
+    font-family: 'Roboto', sans-serif;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
+  .masonry-list {
+    margin:10px;
+    padding:5px;
+    border-radius: 5px;
+    border-color: #525355;
+    border-style: solid;
+    max-width: 240px;
+    min-width:240px;
+    overflow-wrap: anywhere;
+    min-height: 150px;
+    font-family: 'Roboto', sans-serif;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);    
+  }
+
+  .box::after {
+    border-radius: 5px;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    background-color: #525355;
+    opacity: 0;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  
+  .box:hover {
+    -webkit-transform: scale(1.25, 1.25);
+    transform: scale(1.25, 1.25);
+  }
+  
+  .box:hover::after {
+      opacity: 1;
+  }
+
+  .complete{
+    text-decoration: line-through;
+    list-style: url('./baseline_check_box_white_18dp.png');
+  }
+
+  .incomplete{
+    list-style: url('./baseline_check_box_outline_blank_white_18dp.png');
+  }
+
+  .home-center{
+    text-align: center;
+  }
+  
+  .newTodoRouter{
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+    border-color: #525355;
+    border-style: solid;
+    width: 50%;
+    align-content: inherit;
+    margin: auto;
+  }
+
+  .newNoteIcon,
+  .newListIcon{
+    padding: 6px 8px;
+    color: white;
+    position: relative;
+    display:inline-block;
+    background-color: transparent;
+    border: transparent;
+  }
+  .newNoteIcon::before,
+  .newListIcon::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #000;
+    -webkit-transform: scaleX(.3);
+    transform: scaleX(.3);
+    opacity: 0;
+    transition: all .3s
+  }
+  .newNoteIcon:hover::before,
+  .newListIcon:hover::before{
+    opacity: 1;
+    background-color: rgb(48,50,54);
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    transition: -webkit-transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity .4s;
+    transition: transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity
+  }

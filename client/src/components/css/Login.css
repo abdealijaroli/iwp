@@ -1,0 +1,48 @@
+.input-wrapper {
+  width: 400px;
+  margin: 50px auto;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.inputUsername,
+.inputPassword {
+  height: 30px;
+  width: 50%;
+  min-width: 50%;
+  padding: 0;
+  border-radius: 0;
+  line-height: 15px;
+  background-color: transparent;
+  color: white;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid #333333;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: lighter;
+}
+
+.buttonSubmit{
+    align-self: center;
+    margin-left: 120px;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #F4B606;
+    border-radius: 15px;
+    border-style: none;
+    font-size: large;
+}
+
+.alert {
+    padding: 5px;
+    margin:10px;
+    background-color: #F4B606;
+    font-family: 'Work Sans', sans-serif;
+    color: black;
+    border-radius: 15px;
+    align-self: center;
+    text-align: center;
+}
+
+.signUpRedirect{
+  color:#F4B606
+}

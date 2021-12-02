@@ -1,0 +1,105 @@
+ul.incompleteTodo,
+ul.completeTodo{
+    list-style-type: none;
+    padding:0px;
+    margin:0px;
+}
+.addTodo{
+    background :url(./baseline_add_white_24dp.png);
+    padding: 15px 13px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    position: relative;
+    display:inline-block;
+    background-color: transparent;
+    border: transparent;
+}
+
+.incompleteButton{
+    background :url(./baseline_check_box_outline_blank_white_24dp.png);
+    padding: 15px 13px;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display:inline-block;
+    background-color: transparent;
+    border: transparent;
+}
+
+.completeButton{
+    background: url(./baseline_check_box_white_24dp.png);
+    padding: 15px 13px;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display:inline-block;
+    background-color: transparent;
+    border: transparent;
+}
+
+.cancelButton{
+    background: url(./baseline_clear_white_24dp.png);
+    padding: 15px 13px;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display:inline-block;
+    background-color: transparent;
+    border: transparent;
+}
+
+.addTodo::before,
+.incompleteButton::before,
+.completeButton::before,
+.cancelButton::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #000;
+    -webkit-transform: scaleX(.3);
+    transform: scaleX(.3);
+    opacity: 0;
+    transition: all .3s
+}
+
+.addTodo:hover::before,
+.incompleteButton:hover::before,
+.completeButton:hover::before,
+.cancelButton:hover::before{
+    opacity: 1;
+    background-color: rgb(48,50,54);
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    transition: -webkit-transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity .4s;
+    transition: transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity
+}
+
+.todoInput,
+.newTodo{
+    height: 30px;
+    width:75%;
+    padding: 0;
+    border-radius: 0;
+    line-height: 15px;
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #333333;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: lighter;
+}
+
+.completeTodoInput{
+    text-decoration: line-through;
+}

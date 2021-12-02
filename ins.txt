@@ -1,0 +1,3 @@
+two terminals, setup .env
+agenda-manager/: node app
+agenda-manager/client: npm start
